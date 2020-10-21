@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .diamondgrid
+{
+    width: 100%;
+    height: 600px;
+    
+}
+
+.gridlist
+{
+    
+
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    height: 150px;
+    
+}
+
+.gridlist li
+{
+list-style: none;
+position: absolute;
+top: 85%;
+width: 200px;
+height: 200px;
+background: #000;
+margin: -100px;
+transform: rotate(45deg);
+transition: .5s;    
+overflow: hidden;
+border-radius: 5%;
+box-shadow: 2px 2px 2px 2px rgba(0,0,0, 0.4);
+}
+
+
+
+.gridlist li.item1
+{
+    
+    left:5%;
+    /*background-image: url("../images/Screenshot_10.png");*/
+
+}
+
+.gridlist li.item2
+{
+    top:200%;
+    left: 27%;
+    /*background-image: url("../images/Screenshot_2.png");*/
+}
+
+.gridlist li.item3
+{
+    
+    left: 50%;
+   /* background-image: url("../images/Screenshot_5.png");*/
+}
+.gridlist li.item4
+{
+    top: 200%;
+    left: 73%;
+    /*background-image: url("../images/Screenshot_4.png");*/
+}
+.gridlist li.item5
+{
+    right: 5%;
+    left: 95%;
+   /* background-image: url("../images/Screenshot_7.png");*/
+}
+
+.gridlist li .bg
+{
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    transform: rotate(-45deg) scale(1.42);
+    background-size: cover;
+    border: 1px solid #fff;
+    
+}
+
+.gridlist li.item1 .bg
+{
+    background-image: url("../images/Screenshot_10.png");
+}
+
+
+.gridlist li.item2 .bg
+{
+    background-image: url("../images/Screenshot_5.png");
+}
+
+.gridlist li.item3 .bg
+{
+    background-image: url("../images/Screenshot_2.png");
+}
+
+.gridlist li.item4 .bg
+{
+    background-image: url("../images/Screenshot_4.png");
+}
+
+.gridlist li.item5 .bg
+{
+    background-image: url("../images/Screenshot_7.png");
+}
+
+.gridlist li:hover
+{
+    transform: scale(1.5) rotate(45deg);
+}
+
+
+
+    </style>
+</head>
+<body>
+    
+   <section class="diamondgrid">
+    <ul class="gridlist">
+        <li class="item1"> <div class="bg"></div> </li>
+        <li class="item2"><div class="bg"></div></li>
+        <li class="item3"><div class="bg"></div></li>
+        <li class="item4"><div class="bg"></div></li>
+        <li class="item5"><div class="bg"></div></li>
+    </ul>
+
+   </section>  
+</body>
+</html>

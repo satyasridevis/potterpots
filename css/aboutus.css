@@ -23,6 +23,7 @@ html,body
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
+    
 }
 
 
@@ -45,33 +46,41 @@ html,body
 .content-container
 {
     width: 100%;
-    height: 400px;
+    height: 350px;
     
     display: flex;
     flex-direction: row;
     justify-content: center;
+    color: #fff;
+    
+    
 }
 
-.paragraph-content, .second-paragraph-content
+.paragraph-content 
 {
-    width: 90%;
-    height: 400px;
-    
+    width: 85%;
+    height: 350px;
+    background:  repeating-linear-gradient(110deg,white 0, white 120px, #649d66 10%, #649d66);
+        
 }
 
 .paragraph-content p 
 {
-    padding-left: 100px;
+    padding-left: 150px;
     font-family: 'PT Sans', sans-serif;
     line-height: 1.7;
     padding-right: 50px;
     text-align: justify;
+    
+
 }
 
 .paragraph-content  h1
 {
-    padding-left: 100px;
-    padding-top: 50px;
+    padding-left: 150px;
+    padding-top: 30px;
+    
+    
     
     font-family: 'PT Sans', sans-serif;
 }
@@ -105,7 +114,7 @@ html,body
 
 .left-diamond .item1
 {
-    left:21%;  
+    left:45%;  
     background-image: url(../images/Screenshot_4.png);
     background-size: cover; 
     transform: rotate(-45deg);
@@ -115,7 +124,7 @@ html,body
 
 .right-diamond .item2
 {
-    right: 50px;
+    right: 45%;
     top: 100px;
     background-image: url("../images/Screenshot_5.png");
     background-size: cover;
@@ -126,26 +135,71 @@ html,body
 .second-content-container
 {
     width: 100%;
-    height: 400px;
+    height: 350px;
     font-family: 'PT Sans', sans-serif;
     
     display: flex;
     flex-direction: row;
     justify-content: center;
+    color: #fff;
+    
 }
+.second-paragraph-content
+{
+    width: 90%;
+    height: 350px;
+    background: repeating-linear-gradient(255deg, white , white 10%, #649d66 100px, #649d66);
+}
+
 
 .second-paragraph-content p
 {
     padding-left: 50px;
+    padding-right: 50px;
+
 
     line-height: 1.7;
-    padding-right: 100px;
+    padding-right: 150px;
     text-align: justify;
 }
 
 .second-paragraph-content h1
 {
     padding-left: 50px;
-    padding-top: 50px;
+    padding-top: 30px;
+}
+
+/*.bg
+{
+    height: 150px;
+    width: 100%;
+    background-color: #649d66;
+    
+    background-image: url("../images/transparent-flower-border.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    left:0;
+    
+    
+}*/
+
+
+.bg
+{
+    height: 150px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+.bg img{
+    width: 100px;
+    height: 100px;
     
 }
